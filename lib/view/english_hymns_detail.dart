@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:inspired_gospel_hymn/model/hymn_library.dart';
 import 'package:inspired_gospel_hymn/widget/animation.dart';
-
 import 'menu_page.dart';
 
+// ignore: camel_case_types
 class English_Hymns_Details_Page extends StatefulWidget {
   final HymnLibrary hymnLibrary;
 
@@ -14,6 +14,7 @@ class English_Hymns_Details_Page extends StatefulWidget {
       _English_Hymns_Details_PageState();
 }
 
+// ignore: camel_case_types
 class _English_Hymns_Details_PageState
     extends State<English_Hymns_Details_Page> {
   @override
