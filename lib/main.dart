@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
             bodyText1: GoogleFonts.openSans(),
             bodyText2: GoogleFonts.openSans(),
           ),
+          visualDensity: VisualDensity.adaptivePlatformDensity,
         ));
   }
 }
