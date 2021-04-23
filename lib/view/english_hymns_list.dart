@@ -30,28 +30,31 @@ class _EnglishHymnListViewState extends State<EnglishHymnListView> {
                     borderOnForeground: true,
                     child: ListTile(
                       title: Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            SizedBox(width: 5),
-                            Text(
-                              'INSPIRED GOSPEL HYMN ' +
-                                  hymn_library[index].index.toString() +
-                                  ':',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 4),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                'INSPIRED GOSPEL HYMN ' +
+                                    hymn_library[index].index.toString() +
+                                    ':',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 5),
-                            Text(
-                              hymn_library[index].engTitle,
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            )
-                          ],
+                              SizedBox(height: 5),
+                              Text(
+                                hymn_library[index].engTitle,
+                                style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                       onTap: () {
@@ -85,7 +88,7 @@ class _EnglishHymnGridviewState extends State<EnglishHymnGridview> {
       padding: const EdgeInsets.all(4.0),
       child: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 5, crossAxisSpacing: 1.0, mainAxisSpacing: 2.0),
+            crossAxisCount: 5, crossAxisSpacing: 1.0, mainAxisSpacing: 1.0),
         scrollDirection: Axis.vertical,
         itemCount: hymn_library.length,
         itemBuilder: (BuildContext context, index) {
@@ -108,7 +111,7 @@ class _EnglishHymnGridviewState extends State<EnglishHymnGridview> {
                             Text(
                               'IGH ' + hymn_library[index].index.toString(),
                               style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),
